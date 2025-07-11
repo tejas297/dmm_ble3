@@ -14,7 +14,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import RootScreen from './src/screens/RootScreen';
 import { lightTheme } from './src/theme';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
 //utilize the react-native-paper components, the theme will be applied to all components automatically
 //the theme is defined in src/theme.ts and imported here
 //the SafeAreaView is used to ensure the content is rendered within the safe area of the device
@@ -27,6 +26,7 @@ function App(): React.JSX.Element {
       <SafeAreaView style={{ flex: 1 }}>
       <NavigationContainer>
         <RootScreen />
+      
       </NavigationContainer>
       </SafeAreaView>
     </PaperProvider>
