@@ -45,6 +45,7 @@ function SecondStack() {
   const navigation = useNavigation();
   //  console.log(navigation)
   return (
+    //“Hey navigator, if I navigate to 'PeripheralDetails', render the PeripheralDetailsScreen component.”
     <Stack.Navigator initialRouteName='ScanDevices1' screenOptions={{
       headerShown: false, // 
       headerBackVisible: true,
