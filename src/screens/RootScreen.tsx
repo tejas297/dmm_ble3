@@ -21,8 +21,10 @@ const RootScreen = () => (
   
   >
     <Drawer.Screen name="DMM APP" component={SecondStack} options={{ title: "DMM APP" }} />
-    <Drawer.Screen name="Show Files" component={ShowFilesScreen} options={{ headerShown: false, drawerItemStyle: { display: 'flex' } }} />
+    <Drawer.Screen name="Show Files" component={ShowFilesScreen} options={{ headerShown: true, drawerItemStyle: { display: 'flex' } }} />
   </Drawer.Navigator>
+ 
 );
-
+// console.log("RootScreen rendered", Drawer);
+//  console.log("RootScreen rendered", Drawer.Navigator.displayName)
 export default RootScreen;
